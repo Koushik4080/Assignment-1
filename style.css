@@ -1,0 +1,29 @@
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px 80px;
+    margin:15px 70px;
+}
+.element-container{
+    display:flex;
+    margin-top:10px;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none; 
+}
+a{
+   text-decoration: none;
+   color:rgb(119, 106, 106); 
+}
+.button{
+    background-color:blue;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top:10px;
+    font-size: 15px;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
