@@ -43,32 +43,278 @@ a {
 .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.55)), url("./images/banner.jpg");
-             height: 90vh;
-             background-repeat: no-repeat;
-             background-size: cover;
-             background-position: center;  
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.hero-content {
-    color: white;
-    text-align: center;
+
+.hero-section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
-    position: absolute;
-    position: absolute;
-    margin-top: 100px;;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    color: white;
 }
 
-.hero-content h1{
+.hero-content h1 {
     font-size: 80px;
-    gap: 20px;
+    gap: 10px;
 }
-.hero-content p{
+
+.hero-content p {
     font-size: 22px;
 }
-.hero-content button{
-    margin-top: 400px;
+
+.hero-content span {
+    font-style: italic;
+}
+
+.hero-content button {
+    margin-top: 250px;
+}
+
+/* Speaker-section-start */
+
+.speakers {
+    padding: 50px;
+}
+
+.speakers h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #000102;
+}
+
+.speaker-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.card {
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08)
+}
+
+.card img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.speaker-content {
+    padding: 30px;
+}
+
+.card small {
+    color: #2563EB;
+    font-size: 12px;
+}
+
+.card h3 {
+    color: #0D1B2A;
+    margin: 10px 0px;
+}
+
+.card p {
+    color: #575757;
+}
+
+/* speaker section end */
+
+/* Price part starting */
+.pricing {
+    text-align: center;
+    padding: 20px;
+    background-color: #F3F4F6;
+}
+
+.pricing h2 {
+    color: #0D1B2A;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.pricing small {
+    color: #575757;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    ;
+}
+
+.price-card-standard {
+    border: 1px solid rgb(235, 231, 231);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+}
+
+.price-card-standard small {
+    font-size: 13px;
+    color: #888888;
+}
+
+.price-card-standard h3 {
+    font-size: 44px;
+    color: #0D1B2A;
+    margin: 5px 0 5px;
+}
+
+.price-card-pro, .pro-text, span{
+    color: #888888;
+}
+
+.price-card-pro span {
+    display: block;
+    margin-top: 8px;
+}
+
+.price-element li {
+    color: #333333;
+    margin: 10px;
+}
+
+.price-card-standard hr {
+    margin: 25px 0;
+}
+
+li::marker {
+    color: #769ae9;
+}
+
+.price-card-pro {
+    border: 1px solid rgb(235, 231, 231);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+}
+
+.price-card-pro h3 {
+    font-size: 44px;
+}
+
+.price-card-pro hr {
+    margin: 25px 0;
+}
+
+.price-card-pro {
+    background: #0f172a;
+    color: #fff;
+}
+
+.price-card-pro {
+    color: white;
+}
+
+.price-card-pro .pro-text {
+    color: #2563EB;
+}
+
+.price-element-pro li {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 10px;
+    gap: 30px;
+}
+
+.price-card-team {
+    border: 1px solid rgb(235, 231, 231);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+}
+
+.team-header-element h3 {
+    font-size: 44px;
+}
+
+.price-card-team hr {
+    margin: 30px 0;
+}
+
+.price-card-team li {
+    font-size: 14px;
+}
+
+
+/* buttons */
+
+.standard-card-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 10;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.standard-card-button {
+    color: #2563EB;
+}
+
+.pro-card-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 10;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: #2563EB;
+}
+
+.pro-card-button {
+    color: #FFFFFF;
+}
+
+.team-card-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 10;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+.price-card-standard,
+.price-card-pro,
+.price-card-team{
+    width: 370px;
+    min-height: 444px;
+    padding: 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
 }
