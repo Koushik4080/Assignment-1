@@ -165,7 +165,6 @@ a {
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 50px;
-    ;
 }
 
 .price-card-standard {
@@ -184,16 +183,21 @@ a {
 .price-card-standard h3 {
     font-size: 44px;
     color: #0D1B2A;
-    margin: 5px 0 5px;
 }
 
+.price-card-pro {
+    border: 1px solid rgb(235, 231, 231);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+}
+
+.price-card-pro h3 {
+    font-size: 44px;
+}
 .price-card-pro, .pro-text, span{
     color: #888888;
-}
-
-.price-card-pro span {
-    display: block;
-    margin-top: 8px;
 }
 
 .price-element li {
@@ -207,18 +211,6 @@ a {
 
 li::marker {
     color: #769ae9;
-}
-
-.price-card-pro {
-    border: 1px solid rgb(235, 231, 231);
-    border-radius: 12px;
-    padding: 25px;
-    text-align: left;
-    background: #fff;
-}
-
-.price-card-pro h3 {
-    font-size: 44px;
 }
 
 .price-card-pro hr {
@@ -289,7 +281,7 @@ li::marker {
     border-radius: 8px;
     font-size: 16px;
     font-weight: 10;
-    margin-top: 25px;
+    margin-top: 30px;
     cursor: pointer;
     background-color: #2563EB;
 }
@@ -313,8 +305,102 @@ li::marker {
 .price-card-team{
     width: 370px;
     min-height: 444px;
-    padding: 32px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
+}
+
+
+/* The AI part */
+/* FAQ section */
+.faq{
+    padding: 80px 20px;
+    background-color: #F8FAFC;
+}
+
+.faq-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-header h2{
+    font-size: 48px;
+    color: #0D1B2A;
+    margin-bottom: 15px;
+}
+
+.faq-header p{
+    font-size: 18px;
+    color: #6B7280;
+}
+
+.faq-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* FAQ Card */
+
+.faq-item{
+    margin-bottom: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    background: #FFFFFF;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all .3s ease;
+}
+
+.faq-item:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Question */
+
+.faq-item summary{
+    padding: 22px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0D1B2A;
+    list-style: none;
+    position: relative;
+}
+
+/* Hide default arrow */
+
+.faq-item summary::-webkit-details-marker{
+    display: none;
+}
+
+/* Plus icon */
+
+.faq-item summary::after{
+    content: "+";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563EB;
+    transition: .3s;
+}
+
+/* Minus icon when open */
+
+.faq-item[open] summary::after{
+    content: "−";
+}
+
+/* Answer */
+
+.faq-item p{
+    padding: 0 25px 25px;
+    color: #6B7280;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Smooth opening */
+
+.faq-item[open]{
+    border-color: #2563EB;
 }
