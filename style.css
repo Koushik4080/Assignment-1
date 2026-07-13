@@ -12,6 +12,23 @@
     margin: 15px 30px;
 }
 
+.hero-section, .hero-content h1{
+    color:#ffffff;
+    font-size: 80px;
+}
+.hero-section, .hero-content p{
+    color:#ffffff;
+    font-size: 22px;
+}
+.hero-content p{
+    width: 700px;
+    margin: 20px auto;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
 .element-container {
     display: flex;
     margin-top: 10px;
@@ -75,6 +92,7 @@ a {
 
 .hero-content span {
     font-style: italic;
+    color:#F3F4F6;
 }
 
 .hero-content button {
@@ -336,7 +354,7 @@ li::marker {
     margin: 0 auto;
 }
 
-/* FAQ Card */
+
 
 .faq-item{
     margin-bottom: 20px;
@@ -352,7 +370,7 @@ li::marker {
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* Question */
+
 
 .faq-item summary{
     padding: 22px 25px;
@@ -364,13 +382,12 @@ li::marker {
     position: relative;
 }
 
-/* Hide default arrow */
+
 
 .faq-item summary::-webkit-details-marker{
     display: none;
 }
 
-/* Plus icon */
 
 .faq-item summary::after{
     content: "+";
@@ -384,13 +401,6 @@ li::marker {
     transition: .3s;
 }
 
-/* Minus icon when open */
-
-.faq-item[open] summary::after{
-    content: "−";
-}
-
-/* Answer */
 
 .faq-item p{
     padding: 0 25px 25px;
@@ -399,8 +409,54 @@ li::marker {
     font-size: 16px;
 }
 
-/* Smooth opening */
+/* FAQ END */
 
-.faq-item[open]{
-    border-color: #2563EB;
+/* FOOTER START */
+
+.footer-container{
+    background-color:#020118;
+    padding:30px 60px;
+}
+
+.footer-element{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+.footer-left img{
+    width:180px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-left:auto;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#2C2C54;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.social-icons a:hover{
+    background:#2563EB;
+}
+.footer-container hr{
+    border: 0;
+    border-top: 1px solid #59658b;
+    margin: 30px 0;
+}
+.copyright{
+    color:white;
+    text-align:center;
 }
